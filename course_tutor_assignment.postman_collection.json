@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "d0705be0-fc53-4e99-baf6-b6fc40fd6aa8",
+		"name": "course_tutor_assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3999105"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/courses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/courses",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"course\": {\n    \"name\": \"Full Stack Web Development\",\n    \"description\": \"Covers frontend and backend technologies.\",\n    \"tutors_attributes\": [\n      {\n        \"name\": \"John Smith\",\n        \"email\": \"john.smith@mailinator.com\"\n      },\n      {\n        \"name\": \"Jane Doe\",\n        \"email\": \"jane.doe@mailinator.com\"\n      }\n    ]\n  }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"courses"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
