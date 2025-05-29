@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :tutor do
-    name { "MyString" }
-    email { "MyString" }
-    course { nil }
+    sequence(:name) { |n| "Tutor #{n}" }
+    sequence(:email) { |n| "tutor#{n}@example.com" }
+    association :course
   end
 end
